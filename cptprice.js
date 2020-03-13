@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const cptprice = new Discord.Client();
 //const weather = require('weather-js');
-const prefix = '#';
+const prefix = '=';
 let cooldown = new Set();
 let cdsec = 5;
 
@@ -95,7 +95,7 @@ cptprice.on('message', function(message) {
     let args = message.content.split(' ').slice(1);
     let suffix = args.join(' ')
 
-    if(msg === "#SAYZX") {
+    if(msg === "=SAYZX") {
        message.delete(0);
       if(suffix) {
         message.channel.send(suffix)
