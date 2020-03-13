@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js');
 const cptprice = new Discord.Client();
-//const weather = require('weather-js');
+const weather = require('weather-js');
 const prefix = '=';
 let cooldown = new Set();
 let cdsec = 5;
@@ -27,9 +27,6 @@ cptprice.on('message', function(message) {
 
       var caseargs = message.content.substring(prefix.length).split(' ');
       var decisions =
-      message.channel.send(`Alright soldier. This is your mission.`).then(function(m) {
-        m.delete(5000)
-      })
       [
               'Get MVP on One Shot One Kill',
               'Win a Battle Royale as Top 10',
