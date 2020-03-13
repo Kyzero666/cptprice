@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js');
 const cptprice = new Discord.Client();
-const weather = require('weather-js');
+//const weather = require('weather-js');
 const prefix = '=';
 let cooldown = new Set();
 let cdsec = 5;
